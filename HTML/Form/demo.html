@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <!-- <input type="text" placeholder="Enter Address"> -->
+
+        <label for="ad">Enter Address:</label>
+        <textarea name="Address" id="ad" placeholder="Enter Address" cols="30" rows="10"></textarea>
+        <input type="submit">
+    </form>
+    <hr><br>
+
+    <form action="">
+        <label for="">Select Technology</label>
+        <select name="Tech" id="">
+            <option value="HTML">HTML</option>
+            <option value="css">css</option>
+            <option value="Bootstrap">Bootstrap</option>
+            <option value="Js">Js</option>
+
+        </select>
+
+        <input type="submit">
+
+    </form>
+
+    <hr><br>
+    <form action="">
+        <select name="Tech" id="" >
+            <option disabled selected>Select Technology</option>
+            <option value="HTML">HTML</option>
+            <option value="css">css</option>
+            <option value="Bootstrap">Bootstrap</option>
+            <option value="Js">Js</option>
+            <option value="HTML">HTML</option>
+            <option value="css">css</option>
+            <option value="Bootstrap">Bootstrap</option>
+            <option value="Js">Js</option>
+            <option value="HTML">HTML</option>
+            <option value="css">css</option>
+            <option value="Bootstrap">Bootstrap</option>
+            <option value="Js">Js</option>
+
+        </select>
+
+        <input type="submit">
+
+    </form>
+
+
+    <p>Hello Good Morning</p>
+    <form action="">
+        <select name="language" id="" onchange="demo(this.value)">
+            <option disabled selected>select Language</option>
+            <option value="Hello Good Morning">English</option>
+            <option value="हैलो सुप्रभात">Hindi</option>
+            <option value="नमस्कार शुभ सकाळ">Marathi</option>
+
+        </select>
+        <input type="submit">
+    </form>
+
+    <script>
+        function demo(x){
+            document.querySelector("p").textContent=x;
+
+        }
+    </script>
+</body>
+
+</html>
