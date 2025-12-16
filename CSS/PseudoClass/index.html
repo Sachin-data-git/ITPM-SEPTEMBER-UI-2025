@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #an1:hover{
+            color: red;
+            background-color: yellow;
+        }
+
+        #an2:visited{
+            color: yellow;
+        }
+
+        #an3:active{
+                 font-size: 50px;
+        }
+        #an4:link{
+            color: green;
+        }
+
+        img:hover{
+            border: 5px solid red;
+        }
+
+
+        #inp1:focus{
+            background-color: orangered;
+        }
+
+        #inp2:disabled{
+            background-color: red;
+        }
+        input[type="checkbox"]:checked{
+            height: 100px;
+            width: 100px;
+        }
+
+        input[type="url"]:required{
+            border: 1px solid red;
+        }
+
+        #va:invalid{
+            color: red;
+        }
+        #va:valid{
+            color: rgb(26, 255, 0);
+        }
+
+        li:first-child{
+            background-color: green;
+        }
+        li:last-child{
+            background-color: rgb(4, 56, 177);
+        }
+        /* li:nth-child(odd){
+            background-color: rgb(224, 133, 5);
+        } */
+
+        li:empty{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+     <a href="https://www.youtube.com/" id="an1">Hover</a>
+     <a href="#########" id="an2">Visited</a>
+     <a href="" id="an3">Active</a>
+     <a href="##" id="an4">link</a>
+
+     <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" height="300" width="300" alt="">
+
+
+
+     <hr><br>
+     <!-- input Related -->
+      <form action="">
+        <input type="text" id="inp1">
+        <input type="tel" id="inp2" disabled>
+        <input type="checkbox"  checked>
+        <!-- <input type="url"  required> -->
+        <input type="search"  value="demo" readonly>
+
+        <input type="email" placeholder="Enter Email" id="va">
+        <input type="submit" name="" id="">
+      </form>
+
+
+      <ul>
+        <li>welcome</li>
+        <li>Demo</li>
+        <li>Item-1</li>
+        <li>Item</li>
+        <li></li>
+        <li>Item</li>
+        <li></li>
+        <li>Item</li>
+        <li></li>
+        <li>Item</li>
+        <li></li>
+        <li>Item</li>
+      </ul>
+</body>
+</html>

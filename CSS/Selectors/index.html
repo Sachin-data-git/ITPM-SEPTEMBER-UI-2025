@@ -7,7 +7,14 @@
     <title>Document</title>
 
     <style>
-        /* 1)ID Selector  fastest selector*/
+           /* universal selector (*) */
+
+           *{
+              /* border: 1px solid blue; */
+           }
+
+
+        /* 1)ID Selector (#)  fastest selector*/
         #demo {
             color: red;
 
@@ -29,24 +36,66 @@
         .newcls {
             background-color: yellow;
         }
+
+        /* Descendent Selector */
+        /* section span {
+            color: red;
+        } */
+
+        /* Child Combinator */
+        section>div>span{
+            color: red;
+        }
+
+
+        /* Attribute selector  tagName[attrName="value"]*/
+          input[type="tel"]{
+            background-color: yellow;
+          }
+
+          a[href="https://www.youtube.com/"]{
+            color: red;
+          }
     </style>
 </head>
 
 <body>
-    <p class="newcls">Lorem ipsum dolor sit amet.</p>
+    <!-- <p class="newcls">Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
     <p id="demo">Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
-    <p class="newcls">Lorem ipsum dolor sit amet.</p>
+    <p class="newcls">Lorem ipsum dolor sit amet.</p> -->
+
+
+    <section>
+        <span>This is Span Inside section</span>
+    </section>
+
+
+
+    <section>
+        <div>
+            <span>This is span outside the section</span>
+        </div>
+    </section>
+
+
+    <input type="text">
+    <input type="email">
+    <input type="tel">
+
+
+    <a href="https://www.youtube.com/">you tube</a>
+    <a href="https://www.wikipedia.org/">wikipedia</a>
 
     <!-- TASK -->
-     <!-- 1)add red color to paragraph using inline css -->
-     <!-- 2)add green color to paragraph using internal css -->
-     <!-- 3)add blue color to paragraph using external css -->
-      <!-- 4)create one html file in that add 10 paragraphs and then perform operations:
+    <!-- 1)add red color to paragraph using inline css -->
+    <!-- 2)add green color to paragraph using internal css -->
+    <!-- 3)add blue color to paragraph using external css -->
+    <!-- 4)create one html file in that add 10 paragraphs and then perform operations:
        1)apply red color to 2nd paragraph using id
        2)apply blue color to 1st , 3rd , 7th paragraph using class
        3)applly background color yellow to 2nd,1st, 3rd and 7th paragraph using group selector -->
