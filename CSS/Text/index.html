@@ -32,12 +32,12 @@
         h1{
         text-align: justify;
         }
-        a{
+        /*a{
             text-decoration: none;
             color: red;
             /* cursor: auto; */
-            /* pointer-events: none; */
-        }
+            /* pointer-events: none; 
+        } */
 
         div{
             height: 100px;
@@ -45,6 +45,16 @@
             border: 1px solid;
             /* text-shadow:10px 10px 10px red ; */
             box-shadow:10px 10px 10px red ;
+        }
+
+        a{
+           text-decoration: none; 
+           color: green;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: red;
         }
     </style>
 </head>
@@ -66,6 +76,13 @@
 
      <span id="demo1">This is the example of text align property with value left</span>
      <span id="demo2">This is the example of text align property with value right</span>
+
+
+     <ul>
+        <li><a href="">click</a></li>
+        <li><a href="">click</a></li>
+        <li><a href="">click</a></li>
+     </ul>
 
      <!-- TASK -->
       <!-- Task 1: Text Styling Basics
@@ -97,10 +114,11 @@ font-weight: 400
 Task 4: Text Decoration
 Create a list of three links.
 Requirements:
-Remove underline from all links
-On hover, underline the text
-Set link color to green
-On hover, change color to red
+1)Remove underline from all links
+2)On hover add underline the link
+ 3)Set link color to green
+4)On hover change color to red
+
 
 Task 5: Text Shadow Effect
 Create a heading with text shadow.
