@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #parent{
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-evenly;
+        }
+        #uniq{
+            width: 100%;
+            text-align: center;
+        }
+        .items{
+            width: 100%;
+            /* border: 1px solid red; */
+            text-align: center;
+            padding: 20px;
+        }
+        .items img{
+            width: 100%;
+        }
+
+        @media only screen and (min-width:768px){
+           .items{
+            width: 48%;
+           
+        } 
+        }
+        @media only screen and (min-width:1200px){
+           .items{
+            width: 18%;
+           
+        } 
+        }
+
+
+    </style>
+</head>
+<body>
+       <section id="parent">
+        <div id="uniq">
+            <h2>Immunity Boosters</h2>
+        </div>
+        <div class="items">
+            <img src="https://organicindia.com/cdn/shop/files/AmlaPowder_FOP_558X600_crop_center.png?v=1763962085" alt="">
+            <h2>This is Product</h2>
+            <p>rs 456</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="items">
+            <img src="https://organicindia.com/cdn/shop/files/AmlaPowder_FOP_558X600_crop_center.png?v=1763962085" alt="">
+            <h2>This is Product</h2>
+            <p>rs 456</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="items">
+            <img src="https://organicindia.com/cdn/shop/files/AmlaPowder_FOP_558X600_crop_center.png?v=1763962085" alt="">
+            <h2>This is Product</h2>
+            <p>rs 456</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="items">
+            <img src="https://organicindia.com/cdn/shop/files/AmlaPowder_FOP_558X600_crop_center.png?v=1763962085" alt="">
+            <h2>This is Product</h2>
+            <p>rs 456</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="items">
+            <img src="https://organicindia.com/cdn/shop/files/AmlaPowder_FOP_558X600_crop_center.png?v=1763962085" alt="">
+            <h2>This is Product</h2>
+            <p>rs 456</p>
+            <button>Add to Cart</button>
+        </div>
+       </section>
+</body>
+</html>
