@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        #uniq{
+            width: 100%;
+            text-align: center;
+        }
+        .child{
+            width: 100%;
+            border: 1px solid red;
+            margin: 10px;
+        }
+        .child img{
+            width: 100%;
+        }
+
+        @media only screen and (min-width:992px){
+             .child{
+            width: 30%;
+        }
+
+           img{
+            /* https://bennettfeely.com/clippy/ */
+            clip-path: polygon(20% 0%, 80% 0%, 77% 100%, 20% 100%);
+        }
+
+        }
+
+        @media only screen and (min-width:1200px){
+             img{
+                clip-path: circle(50% at 50% 50%);
+            /* https://bennettfeely.com/clippy/ */
+        }
+        }
+
+
+
+
+     
+    </style>
+</head>
+<body>
+    <img src="https://organicindia.com/cdn/shop/files/613X630-tulsi-farm-image.png?v=1666268098" alt="">
+       <section id="container">
+        <div id="uniq">
+            <p>About Us</p>
+        </div>
+        <div class="child">
+         <h2>Our Story</h2>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio laboriosam perspiciatis labore quidem deleniti molestiae quae eaque, beatae voluptates commodi, ipsum qui ut blanditiis, nesciunt odio omnis aliquid quam voluptatum?</p>
+         <button>Demo</button>
+        </div>
+        <div class="child">
+         <img src="https://themewagon.github.io/Koppee/img/about.png" alt="">
+        </div>
+        <div class="child">
+ <h2>Our Story</h2>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio laboriosam perspiciatis labore quidem deleniti molestiae quae eaque, beatae voluptates commodi, ipsum qui ut blanditiis, nesciunt odio omnis aliquid quam voluptatum?</p>
+         <button>Demo</button>
+        </div>
+       </section>
+</body>
+</html>

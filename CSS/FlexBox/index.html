@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 100%;
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .child {
+            width: 50%;
+            /* border: 5px solid; */
+        }
+
+        .child img {
+            width: 80%;
+        }
+
+        #parent {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #uniq {
+            width: 100%;
+        }
+
+        .imgchild {
+            width: 15%;
+            margin: 20px 0px;
+        }
+
+        .txtchild {
+            width: 80%;
+            margin: 20px 0px;
+        }
+
+
+
+         #grandparent{
+            display: flex;
+            flex-wrap: wrap;
+           justify-content: center;
+         }
+        #about{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* border: 2px solid red; */
+            width: 80%;
+            
+        }
+        #aboutu{
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .common{
+            width: 100%;
+            /* border: 1px solid red; */
+            align-self: center;
+        }
+        .common img{
+            width: 100%;
+        }
+        p{
+            margin: 30px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+
+        <div class="child">
+            <img src="https://organicindia.com/cdn/shop/files/613X630-tulsi-farm-image.png?v=1666268098" alt="">
+        </div>
+        <div class="child">
+            <div id="parent">
+                <div id="uniq">
+                    <h2>GET THE ‘TULSI’ WELLNESS EDGE</h2>
+                </div>
+                <div class="imgchild">
+                    <img src="https://organicindia.com/cdn/shop/files/icon-1.png?v=1667396330" alt="">
+                </div>
+                <div class="txtchild">
+                    <h4>GUARD AGAINST COUGH, COLD & POLLUTION</h4>
+                    <p>Tulsi is long known to have anti-inflammatory, anti-bacterial, and anti-viral properties that
+                        help fight infections, hasten the healing of wounds and increase immunity against cough and
+                        cold.</p>
+                </div>
+                <div class="imgchild">
+                    <img src="https://organicindia.com/cdn/shop/files/icon-1.png?v=1667396330" alt="">
+                </div>
+                <div class="txtchild">
+                    <h4>GUARD AGAINST COUGH, COLD & POLLUTION</h4>
+                    <p>Tulsi is long known to have anti-inflammatory, anti-bacterial, and anti-viral properties that
+                        help fight infections, hasten the healing of wounds and increase immunity against cough and
+                        cold.</p>
+                </div>
+                <div class="imgchild">
+                    <img src="https://organicindia.com/cdn/shop/files/icon-1.png?v=1667396330" alt="">
+                </div>
+                <div class="txtchild">
+                    <h4>GUARD AGAINST COUGH, COLD & POLLUTION</h4>
+                    <p>Tulsi is long known to have anti-inflammatory, anti-bacterial, and anti-viral properties that
+                        help fight infections, hasten the healing of wounds and increase immunity against cough and
+                        cold.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section id="grandparent">
+
+  
+    <section id="about">
+        <div id="aboutu">
+            <p>Serving Since 1950</p>
+        </div>
+        <div class="common">
+            <h3>Our Story
+            </h3>
+            <p>Takimata sed vero vero no sit sed, justo clita duo no duo amet et, nonumy kasd sed dolor eos diam lorem
+                eirmod. Amet sit amet amet no. Est nonumy sed labore eirmod sit magna. Erat at est justo sit ut. Labor
+                diam sed ipsum et eirmod</p>
+            <button>LEARN MORE</button>
+        </div>
+        <div class="common">
+            <img src="https://themewagon.github.io/Koppee/img/about.png" alt="">
+        </div>
+        <div class="common">
+            <h3>Our Story
+            </h3>
+            <p>Takimata sed vero vero no sit sed, justo clita duo no duo amet et, nonumy kasd sed dolor eos diam lorem
+                eirmod. Amet sit amet amet no. Est nonumy sed labore eirmod sit magna. Erat at est justo sit ut. Labor
+                diam sed ipsum et eirmod</p>
+            <button>LEARN MORE</button>
+        </div>
+    </section>
+      </section>
+</body>
+
+</html>
