@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 2px solid yellow;
+            /* Specifies how long the transition from the old value to the new value should take. */
+            transition-duration: 5s;
+            /* Defines when the transition will start. It allows a transition to begin execution some period of time from when it is applied. */
+            /* transition-delay: 5s; */
+
+            /* Describes how the intermediate values used during a transition will be calculated. */
+            /* ease: The default value (slow start, then fast, then slow end).
+linear: Same speed from start to finish.
+ease-in: Starts slow and speeds up.
+ease-out: Starts fast and slows down.
+ease-in-out: Slow start and end, faster in the middle. */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-in-out; */
+
+
+        }
+
+        div:hover {
+            background-color: green;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        content
+    </div>
+</body>
+
+</html>
