@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 500px;
+            border: 1px solid red;
+            display: grid;
+            /* column-gap: 10px;
+            row-gap: 10px; */
+            /* gap: 10px; */
+
+            /* grid-template-columns:200px 200px 200px 200px ; */
+            /* grid-template-columns:repeat(3,200px); */
+            /* grid-template-columns:repeat(auto-fill,200px); */
+            grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+
+
+
+            /* grid-template-rows: 100px; */
+        }
+        div{
+            /* height: 100px; */
+            /* width: 100px; */
+            border: 1px solid green;
+            /* background-color: green; */
+        }
+        #demo1{
+             background-color: rebeccapurple;
+           /* grid-column-start: 1;
+           grid-column-end: 3;
+
+           grid-row-start: 1;
+           grid-row-end: 3; */
+             
+        }
+        #demo2{
+             background-color: rgb(2, 198, 9);
+             /* grid-column-start: 3;
+             grid-column-end: 5; */
+        }
+        #demo3{
+             background-color: rgb(239, 30, 11);
+        }
+        #demo4{
+             background-color: rgb(15, 221, 180);
+        }
+
+        
+    </style>
+</head>
+<body>
+      <section>
+        <div id="demo1">1</div>
+        <div id="demo2">2</div>
+        <div id="demo3">3</div>
+        <div id="demo4">4</div>
+      </section>
+</body>
+</html>
