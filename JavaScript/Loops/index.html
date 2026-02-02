@@ -56,16 +56,23 @@
         //     i++;
         //  }while(i>=10);
 
-          let username=prompt("Enter Username");
-        let password=prompt("Enter Password");
 
-        if(username=="demo" && password=="demo@123"){
+
+        let username;
+        let password;
+      
+        do{
+                 username=prompt("Enter Username");
+         password=prompt("Enter Password");
+
+            if(username=="demo" && password=="demo@123"){
             alert("login successfullyy....")
         }
         else{
             alert("username and password incorrect...");
            
         }
+        }while(!(username=="demo" && password=="demo@123"))
        </script>
 </body>
 </html>
