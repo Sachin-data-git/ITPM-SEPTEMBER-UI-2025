@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+
+            
+            let students=[
+                {
+                    id:1,
+                    name:"Atul"
+                },
+                {
+                    id:2,
+                    name:"Asish"
+                },
+                {
+                    id:3,
+                    name:"ajay"
+                },
+                {
+                    id:4,
+                    name:"aman"
+                },
+                {
+                    id:5,
+                    name:"anil"
+                },
+                {
+                    id:6,
+                    name:"Sunil"
+                },
+                {
+                    id:7,
+                    name:"afnan"
+                }
+            ]
+
+                     
+                let filterData=students.filter((s)=>{
+                       return s.name.startsWith("a") ? s.name :null
+                 })
+
+                 
+
+                 console.log(JSON.stringify(filterData))
+        </script>
+</body>
+</html>

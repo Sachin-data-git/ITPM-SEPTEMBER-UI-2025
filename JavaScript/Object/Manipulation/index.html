@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <script>
+        // const student={
+        //     id:1,
+        //     name:"Aman",
+        //     age:34
+        // }
+
+        // console.log(student.name);
+        // console.log(student['name']);
+        
+        //update the value of property 
+        // objName.propertyName="value"
+        // student.id=3;
+        // console.log(student);
+
+        //add the property
+        //   student.email="aman@gmail.com";
+        //   console.log(student);
+
+        //   student.email="demo"
+
+          //delete property
+        //    delete student.age;
+        //    console.log(student)
+
+        
+
+        //update the keys
+        // let oldKey='name';
+        // let newKey='fName';
+        //   student[newKey]=student[oldKey];
+        //   delete student[oldKey];
+        //   console.log(student)
+
+
+
+        const original={
+            id:1,
+            name:"Atul",
+            age:21
+        }
+
+
+         //object desctructing 
+         let{id,...restobj}=original;
+          console.log(id)
+          console.log(restobj)
+
+//         let newobj={...original,email:"atul@gmail.com"}
+// console.log(newobj);
+
+        
+        //  Object.freeze(original);  //stop the updation , deletion , and adding the property
+        //  Object.seal(original);  // we can update , stop the add property , stop deletion
+        // original.id=3;
+        // original.email="atul@gmail.com";
+        // delete original.age;
+        //    console.log(original)
+
+         console.log( Object.values(original))
+         console.log( Object.keys(original))
+         console.log( Object.entries(original))
+
+        
+        //  SECTION A – map (10 Questions)
+        //  Q1.
+        //  Given:
+        //  const numbers = [2, 4, 6, 8, 10];
+        //  Create a new array where each number is multiplied by 5.
+         
+        //  Q2.
+        //  Given:
+        //  const names = ["sachin", "rahul", "virat"];
+        //  Convert all names into uppercase.
+         
+        //  Q3.
+        //  Given:
+        //  const prices = [100, 200, 300, 400];
+        //  Add 18% GST to each price and return a new array.
+         
+        //  Q4.
+        //  Given:
+        //  const users = [
+        //    { id: 1, name: "Amit" },
+        //    { id: 2, name: "Riya" },
+        //    { id: 3, name: "John" }
+        //  ];
+        //  Return a new array containing only user names.
+
+        // Q5.
+        // Given:
+        // const numbers = [10, 25, 60, 80, 15];
+        // Filter numbers greater than 30.
+
+        // Q6.
+        // Filter even numbers from an array.
+
+        // Q7.
+        // Given an array of students, filter students who scored more than 50 marks.
+
+        // Q8.
+        // Filter users whose age is above 18.
+
+        // Q9.
+        // From a product array:
+        // create one product array of object
+        // Filter products price > 500
+        // Add 10% tax
+        // Calculate total price
+
+        // Q10.
+        // create a 10 students array of object
+        // Filter passed students
+        // Convert names to uppercase
+        // Return only names
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+       </script>
+</body>
+</html>

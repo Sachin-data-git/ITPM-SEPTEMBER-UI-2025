@@ -54,41 +54,41 @@
 
 
 
-              const Products = [
-            {
-                name: "Tv",
-                category: "electronics"
-            },
-            {
-                name: "Mobile",
-                category: "electronics"
-            },
-            {
-                name: "Ring",
-                category: "silver"
-            },
-            {
-                name: "Ring2",
-                category: "gold"
-            },
-            {
-                name: "Ring3",
-                category: "platinum"
-            },
-            {
-                name: "Laptop",
-                category: "electronics"
-            },
+      //         const Products = [
+      //       {
+      //           name: "Tv",
+      //           category: "electronics"
+      //       },
+      //       {
+      //           name: "Mobile",
+      //           category: "electronics"
+      //       },
+      //       {
+      //           name: "Ring",
+      //           category: "silver"
+      //       },
+      //       {
+      //           name: "Ring2",
+      //           category: "gold"
+      //       },
+      //       {
+      //           name: "Ring3",
+      //           category: "platinum"
+      //       },
+      //       {
+      //           name: "Laptop",
+      //           category: "electronics"
+      //       },
 
-        ]
-
-
-        let ucategory=prompt("Enter Catogory")
-       let result= Products.filter((data)=>{return data.category==ucategory})
-       console.log(result);
+      //   ]
 
 
-       [
+      //   let ucategory=prompt("Enter Catogory")
+      //  let result= Products.filter((data)=>{return data.category==ucategory})
+      //  console.log(result);
+
+
+      let data= [
   {
     "postId": 1,
     "id": 1,
@@ -3590,6 +3590,15 @@
     "body": "perspiciatis quis doloremque\nveniam nisi eos velit sed\nid totam inventore voluptatem laborum et eveniet\naut aut aut maxime quia temporibus ut omnis"
   }
 ]
+
+      console.log(data);
+
+       let filterData=data.filter((m)=>{return m.id>=100})
+
+       console.log(filterData)
+       filterData.forEach((n)=>{
+            console.log(n.name);
+       })
     </script>
 </body>
 

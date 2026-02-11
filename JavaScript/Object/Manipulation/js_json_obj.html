@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //js object
+        let js_obj={
+            id:1,
+            name:"Ashish",
+            greet:function(){
+                return ("Hello")
+            }
+        }
+        // console.log(js_obj.greet())
+
+        //json object javascript object Notation
+        //  let json_obj={
+        //     "id":1,
+        //     "name":"Ashish"
+        // }
+        
+
+        // console.log(js_obj);
+
+        // js to json   JSON.stringify(jsObject)
+        //    let jsonobj=JSON.stringify(js_obj);
+        //    console.log(jsonobj)
+        //    console.log(jsonobj.greet())
+
+           
+           //json to js   JSON.parse(jsonobj)  
+        //    let newjs=JSON.parse(jsonobj);
+        //    console.log(newjs)
+
+
+           let person={
+            fullName: function() { 
+              return this.firstName + " " + this.lastName; 
+                 }
+           }
+
+             let person1={
+                firstName:"Aman",
+                lastName:"Shinde"
+             }
+             let person2={
+                firstName:"Atul",
+                lastName:"Shinde"
+             }
+           console.log(person.fullName.call(person1))
+           console.log(person.fullName.call(person1))
+           console.log(person.fullName.call(person2))
+
+        
+           function Demo(a,b) {
+             console.log(this.a+" "+this.b);
+             
+            
+           }
+
+           let d={
+            a:"A",
+            b:"B"
+           }
+           Demo.call(d);
+        
+
+    </script>
+</body>
+</html>
