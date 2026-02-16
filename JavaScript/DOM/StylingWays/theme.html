@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        .light{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body class="light">
+    <p>This is Paara</p>
+      <button onclick="changeTheme()">chnage Theme</button>
+
+      <script>
+          let body=document.querySelector("body");
+
+        function changeTheme(){
+              if(body.classList.contains("dark")){
+                body.classList.replace("dark","light");
+            }
+            else{
+                  body.classList.replace("light","dark");
+
+              }
+        }
+
+
+
+      </script>
+</body>
+</html>

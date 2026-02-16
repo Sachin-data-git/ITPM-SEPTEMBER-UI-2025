@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+         <p id="demo">Lorem ipsum dolor sit amet.</p>
+
+         <p class="newcls">Lorem ipsum dolor sit amet.-1</p>
+         <p class="newcls">Lorem ipsum dolor sit amet.-2</p>
+         <p class="newcls">Lorem ipsum dolor sit amet.-3</p>
+
+         <script>
+            // DOM Accessing Methods
+            // getElementById(),getElementsByClassName(),getElementsByTagName(),querySelector(),querySelectorAll()
+            
+            // by Id
+                // let para=document.getElementById("demo");
+                // console.log(para);
+             
+            //by className 
+            // let paraclass=document.getElementsByClassName("newcls");
+            // console.log(paraclass);
+            // console.log(paraclass[2]);
+              
+            // Array.from(paraclass).forEach((e)=>{
+            //     console.log(e)
+            // })
+
+
+            //by TagName
+            // let tag=document.getElementsByTagName("p");
+            // // console.log(tag)
+            // // console.log(tag[0])
+            // Array.from(tag).forEach((a)=>{
+            //      console.log(a)
+            // })
+
+
+            //querySelector
+
+            // let qs=document.querySelector(".newcls");
+            // console.log(qs);
+
+            //querySelectorAll
+
+            let qsa=document.querySelectorAll(".newcls");
+            console.log(qsa);
+
+            qsa.forEach((A)=>{
+                console.log(A)
+            })
+
+         </script>
+</body>
+</html>
