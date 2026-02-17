@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            /* display: none !important; */
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+<body>
+       <!-- <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+         
+        </div> -->
+
+       <!-- <button onclick="addPara()">add</button> -->
+
+       <button onclick="getEl()">getEl</button>
+
+       <hr>
+       <br>
+
+          <p>This is para</p>
+          <button onclick="demo()">get</button>
+
+        <script>
+                let div=document.querySelector("div");
+            // function addPara(){
+            //     // div.innerHTML="<p>This is Para</p>";
+            //     // div.innerText="This is Div";
+            //     // div.textContent="This is div";
+            // }
+
+            // function getEl(){
+            // //    let el=div.innerHTML;
+            // //    alert(el)
+            //    let eltxt=div.innerText;
+            //    alert(eltxt)
+
+            // }
+
+
+            function demo(){
+                let p=document.querySelector("p");
+                // let pData=p.innerText;
+              let pData=p.textContent;
+                console.log(pData);
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+           .hidden{
+            display: none;
+           }
+    </style>
+</head>
+<body>
+         <p class="hidden">hide para after the clicking on button</p>
+       <button onclick="hidePara()">show</button>
+
+    <script>
+
+           function hidePara(){
+                  let para=document.querySelector("p");
+                  para.classList.toggle("hidden");
+           }
+        // Q20: Show / Hide Paragraph
+// Create:
+// One button → “Show/Hide”
+// One paragraph
+// Requirement:
+// When button is clicked:
+// Toggle hidden class on paragraph.
+// In CSS:
+// .hidden {
+//     display: none;
+// }
+// 👉 Use only classList.toggle()
+    </script>
+    
+</body>
+</html>

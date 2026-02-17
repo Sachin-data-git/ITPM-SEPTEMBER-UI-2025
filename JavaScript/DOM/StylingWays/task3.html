@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <p class="demo">Lorem ipsum dolor sit amet.</p>
+      <p class="demo">Lorem ipsum dolor sit amet.</p>
+      <p class="demo">Lorem ipsum dolor sit amet.</p>
+      <p class="demo">Lorem ipsum dolor sit amet.</p>
+      <p class="demo">Lorem ipsum dolor sit amet.</p>
+      <p class="demo">Lorem ipsum dolor sit amet.</p>
+      <p class="demo">Lorem ipsum dolor sit amet.</p>
+      <p class="demo">Lorem ipsum dolor sit amet.</p>
+      <p class="demo">Lorem ipsum dolor sit amet.</p>
+      <p class="demo">Lorem ipsum dolor sit amet.</p>
+      <p class="demo">Lorem ipsum dolor sit amet.</p>
+
+      <script>
+            let el=document.getElementsByClassName("demo");
+             
+             for(i=0;i<el.length;i++){
+                if(i%2==0){
+                    el[i].style.color="red";
+                }
+                else{
+                    
+                    el[i].style.color="blue";
+                }
+             }
+
+            //    let flArr=Array.from(el).filter((m)=>{
+            //     //    console.log(m);
+            //        return m;
+            //    })
+            //    console.log(flArr)
+      </script>
+</body>
+</html>

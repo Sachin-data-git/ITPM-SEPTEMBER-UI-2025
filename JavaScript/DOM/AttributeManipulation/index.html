@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/3131634/pexels-photo-3131634.jpeg" height="200" width="200" alt="">
+
+    <button onclick="changeImage()">change Image</button>
+    <button onclick="getSrc()">get Image url</button>
+
+    <hr>
+    <br>
+    <a href="youtube.com" target="_blank">click</a>
+    <button onclick="getValue()">get value</button>
+    <button onclick="removeAttributetarget()">remove Attribute</button>
+
+    <script>
+
+        let image=document.querySelector("img");
+        function getSrc(){
+              let data=image.getAttribute("src");
+              alert(data)
+        }
+        function changeImage(){
+             image.setAttribute("src","https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg")
+        }
+
+        let anchor=document.querySelector("a");
+        function getValue(){
+             let data= anchor.getAttribute("href");
+            alert(data);
+
+        }
+
+
+        function removeAttributetarget(){
+            alert("target Remove Successfully...")
+            anchor.removeAttribute("target")
+        }
+
+        // TASK
+        // ✅ Task 1: Change Heading Content (innerText)
+        // Create:
+        // One <h1> element
+        //     One button → “Change Text”
+        //     Requirement:
+        //     When button is clicked:
+        //     Change heading text to: "Welcome to JavaScript DOM"
+        //     Use only innerText
+        //     ✅ Task 2: Add HTML Content (innerHTML)
+        //     Create:
+        //     One empty <div>
+        //         One button → “Add Content”
+        //         Requirement:
+        //         On click:
+        //         Add this inside div using innerHTML:
+        //         <h2>Course Details</h2>
+        //         <p>This is DOM Practice</p>
+        //         ✅ Task 3: Difference Between innerText & textContent
+        //         Create:
+        //         <p id="demo">
+        //           Hello
+        //           <span style="display:none;">Hidden</span>
+        //           Students
+        //         </p>
+        //         Requirement:
+        //         Print innerText in console
+        //         Print textContent in console
+        //         Observe the difference
+        //         👉 Students must explain output difference.
+        //         ✅ Task 4: Get Image Attribute
+        //         Create:
+        //         <img src="image1.jpg" alt="Demo Image">
+        //         Requirement:
+        //         When button is clicked:
+        //         Print src value in console using getAttribute()
+        //         ✅ Task 5: Change Image Dynamically (setAttribute)
+        //         Create:
+        //         One image
+        //         One button → “Change Image”
+        //         Requirement:
+        //         On click:
+        //         Change image source to "image2.jpg"
+        //         Use setAttribute()
+        //         ✅ Task 6: Remove Disabled Attribute
+        //         Create:
+        //         <button>Enable Input</button>
+        //         Requirement:
+        //         On button click:
+        //         Remove disabled attribute
+        //         Use removeAttribute()
+        //         ✅ Task 7: Add Attribute Dynamically
+        //         Create:
+        //         One paragraph
+        //         One button
+        //         Requirement:
+        //         When clicked:
+        //         Add attribute title="This is tooltip text"
+        //         Use setAttribute()
+        //         ✅ Task 8: Create Link Dynamically
+        //         Create:
+        //         Empty <div>
+        //             Button → “Create Link”
+        //             Requirement:
+        //             Add inside div:
+        //             <a href="https://google.com" target="_blank">Go to Google</a>
+        //             Use:
+        //             innerHTML
+        //             setAttribute() for href & target
+        //             ✅ Task 9: Read Custom Attribute
+        //             Create:
+        //             <button data-role="admin">Check Role</button>
+        //             Requirement:
+        //             On click:
+        //             Get data-role value
+        //             Print in console
+        //             Use getAttribute()
+                    
+        //             ✅ Task 10: Replace Entire Content (innerHTML)
+        //             Create:
+        //             <div id="box">
+        //                <p>Old Content</p>
+        //             </div>
+        //             Requirement:
+        //             On button click:
+        //             Replace entire div content with:
+        //             <h3>New Content Added</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="text" disabled>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

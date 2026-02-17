@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+       <p>Lorem ipsum dolor sit amet.</p>
+
+       <button onclick="addId()">Add Id</button>
+       <button onclick="removeId()">Remove Id</button>
+
+       <script>
+           let para=document.querySelector("p");
+           function addId(){
+              //add
+            para.id="demo"
+           }
+
+           function removeId(){
+              //remove
+            para.id=""
+           }
+       </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <p class="dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in unde facere autem nulla impedit, alias amet, id quam error accusantium iusto quia porro iste dolore, ducimus sint est? Dicta?</p>
+
+
+     <button onclick="removeClass()">Remove Class</button>
+     <button onclick="addClass()">Add Class</button>
+     <button onclick="toggleClass()">toggle Class</button>
+
+     <script>
+         let para=document.querySelector("p");
+
+          function removeClass(){
+             para.classList.remove("dark")
+          }
+
+          function addClass(){
+             para.classList.add("dark")
+          }
+          function toggleClass(){
+             para.classList.toggle("dark")
+          }
+     </script>
+</body>
+</html>
