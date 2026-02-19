@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+       <script>
+        // let student="Aman";
+        //array
+        let students=["Ajayh","Aman","Atul","Ashish","Harsh","Sahil","Suman"];
+
+    //    console.log(students[0]);
+       
+    //    for(i=0;i<students.length;i++){
+           
+    //        console.log(students[i]);
+    //    }
+
+        //index
+    //    for(let st in students){
+    //     console.log(students[st]);
+    //    }
+
+        //Elements
+    //    for(let st of students){
+    //     console.log(st);
+    //    }
+
+    //forEach  :- it only use for to access elements from array and show elements on UI
+    //  students.forEach(n=>console.log(n));
+    //it dose'nt create new array
+    //   let newArr=students.forEach(n=>{return n});
+    //   console.log(newArr)
+
+    //map  old array+process==> new Array
+
+    //  let processData=students.map((st)=>{
+    //     return(st.toLowerCase())
+         
+    //  })
+
+    //  console.log(processData)
+    //  console.log(students)
+      
+
+    //filter
+
+    // let filterData=students.filter((st)=>{
+    // return( st.startsWith("A") && st.endsWith("h"));
+    // })
+
+    // console.log(filterData)
+    // console.log(students)
+
+
+    //object
+    // let obj={
+    //     id:1,
+    //     name:"Ajay",
+    //     age:30
+    // }
+
+    // console.log(obj)
+    // console.log(obj.id)
+    // console.log(obj["id"])
+
+    //array of object
+    let product=[
+        {
+            id:1,
+            p_name:"Ring",
+            category:"gold",
+            price:2000
+
+        },
+        {
+            id:2,
+            p_name:"chain",
+            category:"silver",
+            price:1000
+        },
+        {
+            id:3,
+            p_name:"Braclet",
+            category:"platinum",
+            price:3000
+        },
+        {
+            id:4,
+            p_name:"Ring-1",
+            category:"gold",
+            price:4000
+
+        }
+    ]
+
+    //filter data whose category is gold
+        
+   let goldproduct=product.filter((p)=>{
+         return p.category=="gold"
+    })
+    console.log(goldproduct);
+
+    //process apply 10 percent discount on price of gold
+
+    let pricewithdiscount=goldproduct.map((n)=>{
+        return n.price*0.9;
+
+    })
+    console.log(pricewithdiscount);
+
+    //bill
+    // reduce
+    let totalbill=pricewithdiscount.reduce((sum,m)=>{
+         return sum+m
+    },0)
+    console.log(totalbill);
+
+
+
+      
+
+
+       </script>
+</body>
+</html>
