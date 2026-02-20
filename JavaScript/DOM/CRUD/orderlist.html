@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <ol>
+
+       </ol>
+
+       <input type="text" id="input" value="10">
+
+       <button onclick="AddItem()">AddItem</button>
+
+       <button onclick="deleteEl()">delete</button>
+
+
+       <script>
+
+           let itemNumber=1
+        function AddItem(){
+            let li=document.createElement("li");
+            let txt=document.createTextNode(`Item-  ${itemNumber}`);
+            itemNumber++;
+
+            li.appendChild(txt);
+
+            let ol=document.querySelector("ol");
+            ol.appendChild(li);
+
+        }
+
+        let el=document.getElementById("input");
+        let data=el.value;
+        console.log(data)
+
+
+            
+
+
+
+       </script>
+</body>
+</html>

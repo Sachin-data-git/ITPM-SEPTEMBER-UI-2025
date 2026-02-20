@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+    
+
+    <button onclick="CreateList()">Create List</button>
+
+    <script>
+        function CreateList(){
+            let tyofList=prompt("Enter which list you want to create");
+
+            let listType=document.createElement(tyofList);
+
+            let listItem=document.createElement("li");
+             listItem.innerText="Item-1";
+
+             listType.appendChild(listItem);
+
+             let body=document.querySelector("body");
+             body.appendChild(listType)
+
+
+
+        }
+    </script>
+</body>
+</html>

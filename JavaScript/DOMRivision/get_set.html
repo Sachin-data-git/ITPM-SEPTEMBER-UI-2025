@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <div id="parent">
+        <p style="display: none;">This is Para</p>
+       </div>
+       <button onclick="getEl()">getEl</button>
+       <button onclick="getTxt()">getTxt</button>
+       <button onclick="getTxtbyTextContent()">getTxtbyTextContent</button>
+
+       <hr><br>
+       <section id="parent-1">
+          
+       </section>
+       <button onclick="setEl()">setEl</button>
+       <button onclick="setTxt()">setTxt</button>
+       <button onclick="setTxtbyTextContent()">setTxtbyTextContent</button>
+
+       <script>
+
+        // GET
+           let parent=document.getElementById("parent");
+
+        function getEl(){
+              console.log(parent.innerHTML);
+        }
+
+        function getTxt(){
+            console.log(parent.innerText);  //not able to access invisible text only accees visible text
+        }
+        function getTxtbyTextContent(){
+            console.log(parent.textContent); //access visible as well as invisible Text 
+        }
+
+
+        // set
+
+        let parent1=document.querySelector("section");
+
+        function setEl(){
+            parent1.innerHTML="<p>This is Paragraph</p>"
+        }
+        function setTxt(){
+            parent1.innerText="This is Paragraph"
+        }
+        function setTxtbyTextContent(){
+            parent1.textContent="This is Paragraph"
+        }
+        
+       </script>
+</body>
+</html>

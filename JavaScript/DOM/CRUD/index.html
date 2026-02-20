@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="parent" style="height: 200px; border: 2px solid red;">
+           <p id="first" style="border: 1px solid green;">This is Para</p>
+    </section>
+
+    <!-- <button onclick="createEl()">CreateElement</button>
+    <button onclick="createTxt()">CreateText</button> -->
+
+    <button onclick="addEl()">Add h1</button>
+    <button onclick="addBefore()">inserBefore</button>
+    <button onclick="replaceEl()">replaceChild</button>
+    <button onclick="deleteEl()">Delete</button>
+
+
+    <script>
+            //  function createEl(){
+            //     let h1=document.createElement("h1");
+            //     console.log(h1);
+            //  }
+
+            //  function createTxt(){
+            //     let text=document.createTextNode("This is Heading");
+            //     console.log(text)
+            //  }
+
+            function addEl(){
+                let data=prompt("Enter Data")
+                let h1=document.createElement("h1");
+                 let text=document.createTextNode(data);
+                 h1.appendChild(text);
+                 console.log(h1);
+
+                 let parent=document.getElementById("parent");
+                 parent.appendChild(h1);
+
+            }
+
+            function addBefore(){
+                 let data=prompt("Enter Data")
+                let h1=document.createElement("h1");
+                 let text=document.createTextNode(data);
+                 h1.appendChild(text);
+                 console.log(h1);
+
+                 let parent=document.getElementById("parent");
+                 let first=document.getElementById("first");
+                 //syntax:-   parent.insertBefore(newElement,reffrence)
+                  parent.insertBefore(h1,first)
+            }
+
+
+            function replaceEl(){
+                let span=document.createElement("span");
+                let spanData=document.createTextNode("This is Replaced SPan");
+                span.appendChild(spanData);
+
+                 let parent=document.getElementById("parent");
+                 let first=document.getElementById("first");
+
+                 parent.replaceChild(span,first)
+
+            }
+
+            function deleteEl(){
+                let parent=document.getElementById("parent");
+                 let first=document.getElementById("first");
+                //  parent.removeChild(first)
+                 parent.remove();
+            }
+
+
+            // Access Elements
+            // getElementById(),getElementsByClassName(),getElementsByTagName(),querySelector(),querySelectorAll()
+
+            //CRUD Create ,Read , Update , Delete
+            // createElement(),createTextNode(),appendChild(),inserBefore(),replaceChild(),remove(),removeChild()
+
+
+            // TASK
+    // TASK 1: Create and Append Elements
+    // (createElement, createTextNode, appendChild)
+    // Question:
+    // Create a <div> element with the text "Welcome to DOM Assignment" and append it inside the <body>.
+    //   Requirements:
+    //   Use document.createElement()
+    //   Use document.createTextNode()
+    //   Use appendChild()
+
+
+    //   TASK 2: Create Multiple List Items
+    //   (createElement, createTextNode, appendChild)
+    //   Question:
+    //   Create an unordered list <ul> with 5 <li> items having text:
+    //     Item 1
+    //     Item 2
+    //     Item 3
+    //     Item 4
+    //     Item 5
+    //     Append the list to the page.
+
+    //     TASK 3: Insert Element Before Another
+    //     (insertBefore)
+    //     Given HTML:
+    //     <ul id="menu">
+    //       <li>Home</li>
+    //       <li>About</li>
+    //     </ul>
+    //     Question:
+    //     Insert a new list item "Services" before the "About" item.
+
+    //     TASK 4: Replace an Existing Element
+    //     (replaceChild)
+    //     Given HTML:
+    //     <div id="box">
+    //       <p>Old Paragraph</p>
+    //     </div>
+    //     Question:
+    //     Replace "Old Paragraph" with a new paragraph having text
+    //     "This paragraph has been replaced"
+
+    //     TASK 5: Remove an Element Using remove()
+    //     (remove)
+    //     Given HTML:
+    //     <p id="removeMe">Delete this paragraph</p>
+    //     Question:
+    //     Remove the paragraph from the DOM using the modern method.
+
+    //     TASK 6: Remove Child Element
+    //     (removeChild)
+    //     Given HTML:
+    //     <ul id="list">
+    //       <li>Apple</li>
+    //       <li>Banana</li>
+    //       <li>Mango</li>
+    //     </ul>
+    //     Question:
+    //     Remove the "Banana" list item using removeChild().
+
+    // TASK 7:
+    // Create a card dynamically with:
+    // Image
+    // Title
+    // Description
+    // Button
+
+
+
+
+    </script>
+</body>
+</html>
