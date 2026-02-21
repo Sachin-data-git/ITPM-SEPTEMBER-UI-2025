@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            background-color: red;
+            padding: 30px 50px;
+            color: white;
+            border-radius: 10px;
+            border-color: white;
+            font-size: 20px;
+            cursor: grab;
+        }
+
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        .light{
+            background-color: rgb(255, 246, 246);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body class="light">
+    <button id="btn1">subscribe</button>
+
+    <button id="btn2">Dark</button>
+
+    <button id="btn3">Start Exam</button>
+
+    <script>
+        let btn=document.querySelector("#btn1");
+        btn.addEventListener("click",()=>{
+            // "subscribe"=="subscribe"
+            if(btn.textContent=="subscribe"){
+                btn.textContent="subscribed"
+            }
+            else{
+                
+                btn.textContent="subscribe"
+            }
+        })
+
+
+        let btn2=document.querySelector("#btn2");
+        let body=document.querySelector("body");
+        btn2.addEventListener("click",()=>{
+             if(body.classList.contains("light"))
+             {
+                body.classList.replace("light","dark");
+                 btn2.textContent="Light"
+                }
+                else{
+                    
+                    body.classList.replace("dark","light")
+                    btn2.textContent="Dark"
+             }
+        })
+
+
+        let btn3=document.getElementById("btn3")
+        btn3.addEventListener("click",()=>{
+
+            document.documentElement.requestPointerLock();
+            document.documentElement.requestFullscreen();
+        })
+        </script>
+    
+</body>
+</html>

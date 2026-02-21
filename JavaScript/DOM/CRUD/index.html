@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #demo{
+            border: 1px solid red;
+            width: 200px;
+            height: 350px;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <section id="parent" style="height: 200px; border: 2px solid red;">
@@ -17,6 +25,15 @@
     <button onclick="addBefore()">inserBefore</button>
     <button onclick="replaceEl()">replaceChild</button>
     <button onclick="deleteEl()">Delete</button>
+
+    <hr><br>
+
+    <button onmouseover="createCard()">Create Card</button>
+
+    <section id="demo">
+
+    </section>
+
 
 
     <script>
@@ -74,6 +91,10 @@
                 //  parent.removeChild(first)
                  parent.remove();
             }
+
+
+
+            
 
 
             // Access Elements
@@ -149,6 +170,35 @@
     // Title
     // Description
     // Button
+
+
+    function createCard(){
+         
+        let img=document.createElement("img");
+        img.setAttribute("src","https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg")
+        img.setAttribute("height","200")
+        img.setAttribute("width","200")
+        let h2=document.createElement("h2");
+        h2.textContent="This is Title"
+        let p=document.createElement("p");
+        p.textContent="This is paragraph"
+        let button=document.createElement("button");
+        button.textContent="View More"
+
+        let div=document.createElement("div");
+        let detail=[img,h2,p,button]
+        div.append(...detail);
+        div.className="card";
+
+        let section=document.querySelector("#demo");
+        section.appendChild(div);
+
+
+    }
+
+
+
+
 
 
 

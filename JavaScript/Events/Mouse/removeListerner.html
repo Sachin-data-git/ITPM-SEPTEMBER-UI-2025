@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <button>Pay</button>
+
+    
+
+
+      <script>
+        let btn=document.querySelector("button");
+
+        btn.addEventListener("click",payment)
+
+        function payment(){
+                console.log("Pyament Successfull....");
+                btn.setAttribute("disabled","true")
+                btn.removeEventListener("click",payment);
+                
+        }
+
+
+
+
+      </script>
+</body>
+</html>
