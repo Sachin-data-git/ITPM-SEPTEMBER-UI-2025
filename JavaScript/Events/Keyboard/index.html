@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <input type="text" placeholder="Enter Text" id="input"> -->
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, ad odio commodi sapiente animi neque tempore aliquid corrupti fugiat doloribus error optio praesentium reiciendis. Eligendi similique minus sunt magni earum?
+    Mollitia voluptatem quibusdam nostrum officia nihil necessitatibus commodi vero architecto possimus, omnis voluptates cupiditate nesciunt. Recusandae laborum quaerat hic totam praesentium animi, non molestiae dolores iusto aliquam pariatur quod neque!
+    Dignissimos sed quo magnam ullam amet, cum sunt sint, suscipit similique totam accusantium. Debitis dolores omnis tempora consequuntur eum quis, assumenda eveniet animi eligendi vero, suscipit totam repellendus voluptatem tempore?
+    A culpa porro debitis earum impedit consectetur, excepturi tempore reprehenderit similique quidem quis doloremque cum quibusdam quos alias deserunt officiis. Numquam ducimus labore, quidem consequatur iure commodi debitis animi deserunt!
+    Id vero accusamus molestiae omnis, impedit eius nemo sint iure at sapiente atque totam nostrum, ad voluptates nesciunt fugiat laboriosam eligendi perspiciatis in magni aspernatur. Ut, voluptate! Adipisci, consequuntur itaque?</p>
+      <script>
+        let input=document.getElementById("input");
+        // input.addEventListener("keydown",()=>{
+        //          console.log("key DOWN...")
+        // })
+        // input.addEventListener("keypress",()=>{
+        //          console.log("key pressed...")
+        // })
+        // input.addEventListener("keyup",()=>{
+        //          console.log("key up...")
+        // })
+
+        //  input.addEventListener("keydown",(event)=>{
+        //          console.log(event.key);
+        // })
+
+
+        document.addEventListener("keydown",(event)=>{
+            if(((event.key=="a") ||(event.key=="A")) && (event.ctrlKey) ){
+                 event.preventDefault();
+                 alert("Selection prevented....")
+            }
+        })
+
+
+        // TASK
+    //     1)Change Background Color
+    //     👉 When user presses:
+    //     r → Red
+    //     g → Green
+    //     b → Blue
+    //     Change body background color.
+
+    //     2)Disable Specific Key
+    //     👉 Prevent user from typing number 5 inside input field.
+
+    //     3)Count Key Presses
+    //     👉 Count how many keys user pressed and display count on screen.
+
+    //     4)Caps Lock Detection
+    //     👉 Detect if Caps Lock is ON and show:
+    //     Caps Lock is ON
+    //     (Hint: event.getModifierState("CapsLock"))
+
+    //    5) Keyboard Shortcut
+    //     👉 If user presses:
+    //     Ctrl + S , Ctrl+A , Ctrl+C , like wise shortCuts
+    //     Prevent default behavior
+
+    //     6)Detect Copy & Paste
+    //     👉 Detect:
+    //     Ctrl + C
+    //     Ctrl + V
+    //     Show custom message.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </script>
+</body>
+</html>

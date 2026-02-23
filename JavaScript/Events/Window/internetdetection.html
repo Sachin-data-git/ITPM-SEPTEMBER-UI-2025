@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Offline Check</title>
+</head>
+<body>
+
+<h1>Check Console</h1>
+
+<script>
+  window.addEventListener("offline", () => {
+    console.log("You are offline");
+  });
+
+  window.addEventListener("online", () => {
+    console.log("Back to online");
+  });
+
+  console.log("Current status:", navigator.onLine);
+</script>
+
+</body>
+</html>
