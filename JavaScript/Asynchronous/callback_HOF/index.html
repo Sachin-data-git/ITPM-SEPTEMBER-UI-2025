@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+        //higher order function (HOF)
+        function First(callback){
+            console.log("First....")
+            callback();
+        }
+        First(Second(Third));
+
+        console.log(x);
+
+        //callback
+        function Second(callback){
+            console.log("Second....")
+            callback()
+        }
+        
+        function Third(){
+            console.log("Third....")
+
+        }
+       
+
+      
+
+
+      </script>
+</body>
+</html>

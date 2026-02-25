@@ -37,7 +37,20 @@
                  alert("Selection prevented....")
             }
         })
+    
 
+            document.addEventListener("keydown",(event)=>{
+                if(event.getModifierState("CapsLock")){
+                     console.log("On")
+                    }
+                    else{
+                        
+                        console.log("Off")
+                }
+            })
+
+        //
+          
 
         // TASK
     //     1)Change Background Color

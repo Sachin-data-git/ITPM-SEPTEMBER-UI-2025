@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+       <ul>
+        <li id="demo1">Item-1</li>
+        <li id="demo2">Item-2</li>
+        <li id="demo3">Item-3</li>
+        <span>span</span>
+       </ul>
+
+       <button onclick="addItem()">add Li</button>
+
+       <script>
+        // let demo1=document.getElementById("demo1")
+        // let demo2=document.getElementById("demo2")
+        // let demo3=document.getElementById("demo3")
+
+              let n=4
+          function addItem(){
+            let li=document.createElement("li");
+            let button=document.createElement("button");
+            li.innerHTML=`Item- ${n} <button>Delete</button>`;
+            n++;
+            
+
+            document.querySelector("ul").appendChild(li);
+        }
+
+
+
+
+
+           
+
+        // let all=document.getElementsByTagName("li");
+        // Array.from(all).forEach((m)=>{
+        //     m.addEventListener("click",()=>{
+        //         m.style.color="red";
+        //     })
+        // })
+
+
+        let parent=document.querySelector("ul");
+
+        // parent.addEventListener("click",(event)=>{
+        //       if((event.target)&&(event.target.tagName=="LI")){
+        //         event.target.style.color="red";
+        //       }
+        // })
+        parent.addEventListener("click",(event)=>{
+
+
+                 console.log(event.target);
+                //  console.log(event.currentTarget);
+                 if((event.target)&&(event.target.tagName=="BUTTON")){
+                    // event.target.style.color="red"
+                    event.target.parentElement.remove()
+                 }
+               
+                 
+        })
+
+
+
+
+    //  TASK
+    // ✅ Task 1: List Item Click (Basic Delegation)
+    // HTML:
+    // <ul id="list">
+    //    <li>Item 1</li>
+    //    <li>Item 2</li>
+    //    <li>Item 3</li>
+    // </ul>
+    // 🎯 Requirements:
+    // Add only ONE event listener on <ul>
+    //     When clicking <li>, show alert with item name.
+    //         Must use event.target.
+//     ✅ Task 2: Dynamic List Items (Important 🔥)
+// 🎯 Requirements:
+// Add button “Add Item”
+// When clicked, new <li> should be added.
+//     Clicking new item should also work.
+
+// ✅ Task 3: Todo Delete Button (Real Use Case)
+// Structure:
+// <ul id="todoList">
+//    <li>
+//       Task 1
+//       <button class="delete">Delete</button>
+//    </li>
+// </ul>
+// 🎯 Requirements:
+// Use event delegation on <ul>
+//     If delete button clicked → remove that li
+//     Must use:
+//     event.target
+//     classList.contains()
+
+// 🎯 Requirements:
+// Use event delegation on <ul>
+//     If Edit button clicked → Edit that li
+//     Must use:
+//     event.target
+//     classList.contains()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+        
+
+      
+
+
+       </script>
+
+</body>
+</html>

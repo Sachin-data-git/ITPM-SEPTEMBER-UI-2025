@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandparent{
+            height: 300px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent{
+            height: 150px;
+            width: 70%;
+            border: 1px solid green;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #child{
+            padding: 10px;
+            background-color: yellow;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+      <div id="grandparent">
+            <div id="parent">
+                <button id="child">click</button>
+            </div>
+      </div>
+
+
+      <script>
+      let grandparent =document.getElementById("grandparent");
+      let parent =document.getElementById("parent");
+      let child =document.getElementById("child");
+
+      child.addEventListener("click",(event)=>{
+
+        alert("child cliked-1...")
+        // event.stopImmediatePropagation();
+        event.stopPropagation();
+      },false)
+
+      child.addEventListener("click",(event)=>{
+
+        alert("child cliked-2...")
+      },false)
+
+
+      parent.addEventListener("click",()=>{
+        alert("parent cliked...")
+      },false)
+      grandparent.addEventListener("click",()=>{
+        alert("grandparent cliked...")
+      },false)
+
+      // TASK
+      // ✅ Task 1: Basic Bubbling Test
+      // Create this structure:
+      // div (grandparent)
+      //    div (parent)
+      //       button (child)
+      // 🎯 Requirements:
+      // Add click event on all three elements.
+      // Click the button.
+      // Print which element is clicked.
+      // Students must observe order of execution.
+      // 👉 Ask them:
+      // Why is child printed first?
+      // What is default behavior?
+
+      // ✅ Task 2: Capturing Mode
+      // Same structure as above.
+      // 🎯 Requirements:
+      // Enable capturing using third parameter.
+      // Observe output order.
+      // Explain difference between bubbling and capturing.
+      
+      // ✅ Task 3: stopPropagation()
+      // 🎯 Requirements:
+      // Add click events on parent and child.
+      // Use stopPropagation() inside child.
+      // Click child.
+      // Parent should not log.
+      // 👉 Ask students:
+      // Why parent is not executed?
+      // What happens if removed?
+
+      // Task 4: Multiple Listeners + stopImmediatePropagation()
+      // Add 2 click listeners to same button.
+      // Use stopImmediatePropagation() in first one.
+      // Second should not run.
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+      </script>
+</body>
+</html>

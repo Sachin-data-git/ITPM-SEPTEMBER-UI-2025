@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="demo()">click</button> -->
+       <script>
+                // let id=setInterval(()=>{
+                //     console.log("Demo...")
+                // },1000)
+
+                // function demo(){
+                //     clearInterval(id)
+                // }
+
+                
+
+
+           function order(callback){
+                setTimeout(()=>{
+                    console.log("Order....")
+                    callback()
+                },1000)
+           }
+
+           function OrderConfirmed(callback){
+                setTimeout(()=>{
+                    console.log(x)
+                    console.log("OrderConfirmed....")
+                    callback()
+                },2000)
+           }
+
+           function OrderPlaced(){
+            setTimeout(()=>{
+                    console.log("OrderPlaced....")
+                },3000)
+           }
+
+
+          order(()=>{
+            OrderConfirmed(()=>{
+                OrderPlaced(
+                    setTimeout(()=>{
+                    console.log("order successfully...")
+                },4000)
+                )
+            })
+          })
+
+
+       </script>
+</body>
+</html>
