@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <script>
+        // let p1=Promise.resolve("P1");
+        // let p2=Promise.reject("P2");
+        // let p3=Promise.resolve("P3");
+
+        // all
+        // Promise.all([p1,p2,p3]).then((result)=>{
+        //     console.log(result);
+        // }).catch((err)=>{
+        //     console.error(err);
+        // })
+
+        //allSettled
+        // Promise.allSettled([p1,p2,p3]).then((result)=>{
+        //     console.log(result);
+        // }).catch((err)=>{
+        //     console.error(err);
+        // })
+
+
+        //race
+        let p1=new Promise((resolve,reject)=>{
+              setTimeout(()=>{
+                resolve("First Promise")
+              },5000)
+        })
+        let p2=new Promise((resolve,reject)=>{
+              setTimeout(()=>{
+                reject("Second Promise")
+              },1000)
+        })
+        let p3=new Promise((resolve,reject)=>{
+              setTimeout(()=>{
+                resolve("Third Promise")
+              },2000)
+        })
+        
+        // race
+        // Promise.race([p1,p2,p3]).then((result)=>{
+        //     console.log(result)
+        // }).catch((err)=>{
+        //     console.log(err);
+        // })
+
+        //any only success promise
+        Promise.any([p1,p2,p3]).then((result)=>{
+            console.log(result)
+        }).catch((err)=>{
+            console.log(err);
+        })
+       </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function orderPizza() {
+            console.log("Pizzza is being prepared....")
+            return new Promise((resolve, reject) => {
+
+                let isdDelivery = false;
+                setTimeout(() => {
+                    if (isdDelivery) {
+                        resolve("Order Confirmed...")
+                    }
+                    else {
+                        reject("Order Rejected...")
+
+                    }
+                }, 2000)
+            })
+        }
+
+        orderPizza().then((result) => 
+        { console.log(result) }
+    ).catch((err) => 
+    { console.log(err) }).finally(()=>console.log("Thanks for Visiting..."))
+    </script>
+</body>
+
+</html>
