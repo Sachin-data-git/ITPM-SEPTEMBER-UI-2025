@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addData()">addData</button>
+    <button onclick="getData()">getData</button>
+    <button onclick="removeData()">removeData</button>
+    <button onclick="clearData()">clearData</button>
+
+    <script>
+         function addData(){
+            sessionStorage.setItem("userName","Aman");
+         }
+         function getData(){
+           let userName= sessionStorage.getItem("userName");
+           console.log(userName)
+         }
+
+         function removeData(){
+            sessionStorage.removeItem("userName");
+         }
+         function clearData(){
+            sessionStorage.clear();
+         }
+
+
+    </script>
+</body>
+</html>

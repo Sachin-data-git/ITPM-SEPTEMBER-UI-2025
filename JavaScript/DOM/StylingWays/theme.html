@@ -2,39 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Theme Toggle</title>
 
     <style>
-        .dark{
+        .dark {
             background-color: black;
             color: white;
         }
-        .light{
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
+
+        .light {
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
-<body class="light">
+<body>
+
     <p>This is Paara</p>
-      <button onclick="changeTheme()">chnage Theme</button>
+    <button onclick="changeTheme()">Change Theme</button>
 
-      <script>
-          let body=document.querySelector("body");
+    <script>
+        let body = document.body;
 
-        function changeTheme(){
-              if(body.classList.contains("dark")){
-                body.classList.replace("dark","light");
-            }
-            else{
-                  body.classList.replace("light","dark");
+        // ✅ Load saved theme on page load
+        let savedTheme = localStorage.getItem("theme");
 
-              }
+        if (savedTheme) {
+            body.classList.add(savedTheme);
+        } else {
+            body.classList.add("light"); // default theme
         }
 
+        function changeTheme() {
+            if (body.classList.contains("dark")) {
+                body.classList.replace("dark", "light");
+                localStorage.setItem("theme", "light");
+            } else {
+                body.classList.replace("light", "dark");
+                localStorage.setItem("theme", "dark");
+            }
+        }
+    </script>
 
-
-      </script>
 </body>
 </html>

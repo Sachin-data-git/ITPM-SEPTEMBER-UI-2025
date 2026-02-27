@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <input type="text" placeholder="Enter Name" id="rinput">
+       <button onclick="Register()">Submit</button>
+
+       <hr>
+      <input type="text" placeholder="Enter Name" id="linput">
+       <button onclick="Login()">Submit</button>
+
+
+       <script>
+        function Register(){
+             let input=document.getElementById("rinput");
+             let username=input.value;
+             console.log(username);
+             localStorage.setItem("username",username)
+        }
+
+
+        function Login(){
+        let input=document.getElementById("linput");
+        let lusername=input.value;
+        let afromlocal=localStorage.getItem("username")
+
+        if(lusername==afromlocal){
+            alert("login successfull")
+        }
+        else{
+            alert("pls enter valid username")
+
+        }
+        }
+
+
+
+       </script>
+</body>
+</html>

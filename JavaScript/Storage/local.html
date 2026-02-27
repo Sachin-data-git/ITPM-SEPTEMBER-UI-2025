@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addData()">addData</button>
+    <button onclick="getData()">getData</button>
+    <button onclick="removeData()">removeData</button>
+    <button onclick="clearData()">clearData</button>
+
+    <script>
+         function addData(){
+            let student={
+                id:1,
+                name:"Atul",
+                age:24
+            }
+
+            // localStorage.setItem("userName","Aman");
+            localStorage.setItem("studentData",JSON.stringify(student));
+         }
+         function getData(){
+        //    let userName= localStorage.getItem("userName");
+        //    console.log(userName)
+        let stData=JSON.parse(localStorage.getItem("studentData"))
+        console.log(stData)
+         }
+
+         function removeData(){
+            localStorage.removeItem("userName");
+         }
+         function clearData(){
+            localStorage.clear();
+         }
+
+
+    </script>
+</body>
+</html>
