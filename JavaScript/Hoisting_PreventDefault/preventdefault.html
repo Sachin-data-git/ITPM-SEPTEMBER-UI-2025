@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <a href="https://www.youtube.com/">you tube</a>
+
+  <hr><br>
+       <form action="" id="myform">
+        <input type="text" placeholder="Enter Username" name="Username" id="user">
+        <p style="color: red;"></p>
+        <input type="submit" id="submit">
+       </form>
+
+       <script>
+        let link=document.querySelector("a");
+
+        link.addEventListener("click",(event)=>{
+                 event.preventDefault();
+                //  alert("Navigation Prevented...")
+        })
+
+        //open that you tube on dblclick
+
+          link.addEventListener("dblclick",()=>{
+                // window.location="https://www.youtube.com/"
+                window.open("https://www.youtube.com/", "height:200","width:300")
+        })
+
+
+          let myform=document.getElementById("myform");
+
+          myform.addEventListener("submit",(event)=>{
+
+            let user=document.getElementById("user").value;
+
+            if(!user){
+                event.preventDefault();
+
+                // alert("username is required...")
+                document.querySelector("p").textContent="username is required"
+            }
+            else if(user.length<6){
+                event.preventDefault();
+                alert("Username must have 6 characters")
+            }
+
+          })
+
+
+        //    myform.addEventListener("keydown",(event)=>{
+        //         if(event.key=="Enter"){
+        //             event.preventDefault();
+        //         }
+        //    })
+
+        
+
+
+       </script>
+</body>
+</html>
