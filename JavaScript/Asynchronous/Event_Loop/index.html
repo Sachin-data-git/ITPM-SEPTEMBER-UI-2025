@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function First(){
+            console.log("First..");
+        }
+        First()
+
+        setTimeout(()=>{
+            console.log("Second-1.."); 
+        },1000);
+        setTimeout(()=>{
+            console.log("Second-2.."); 
+        },2000);
+
+        let p1=Promise.resolve("Promise1");
+        p1.then(result=>{
+            console.log(result);
+        })
+        let p2=Promise.resolve("Promise2");
+        p2.then(result1=>{
+            console.log(result1);
+        })
+
+      function Third(){
+          console.log("Third..")
+      }
+      Third()
+
+        // First Third
+        
+        
+    </script>
+</body>
+</html>
