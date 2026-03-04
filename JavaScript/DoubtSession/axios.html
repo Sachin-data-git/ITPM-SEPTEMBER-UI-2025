@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fetchData()">fetchData</button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.11.0/axios.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script>
+        async function fetchData() {
+
+            try {
+                let obj = {
+                    method: "GET",
+
+                }
+
+                // let response= await axios.request(obj);
+                let response = await fetch("https://jsonplaceholder.typicode.com/posts/1/comments", obj);
+                console.log(response.json())
+
+            } catch (err) {
+                console.log(err)
+            }
+        }
+
+
+        const Student = {
+            name: "Om",
+            age: 25,
+            id: 1,
+            email: "om@gmail.com"
+        }
+
+
+
+        Student.age = 30;
+        console.log(Student);
+
+
+
+        let arr1 = [1, 2, 3];
+        let arr2 = [1, 2, 3];
+
+        console.log(arr1 == arr2);//
+
+        let a = 1;
+        let b = 1;
+
+        console.log(a == b);//
+
+
+        //   if(null){
+        //     console.log("A")
+        // }else{
+        //       console.log("B")
+
+        //   }
+
+        for (var i = 1; i <= 3; i++) {
+            setTimeout(function () {
+                console.log(i);
+            }, 1000);
+        }
+        // 1 2 3 
+        for (let i = 1; i <= 3; i++) {
+            setTimeout(function () {
+                console.log(i);
+            }, 1000);
+        }
+        //
+
+        console.log([] == ![]);
+
+        let ar=[1,2,3,4,5,6,7];
+          let[,,...restData]=ar;
+          console.log(restData);
+
+
+
+    </script>
+</body>
+
+</html>

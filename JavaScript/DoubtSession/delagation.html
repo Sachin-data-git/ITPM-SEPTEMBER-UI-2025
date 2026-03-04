@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li>Item</li>
+        <span>Demo</span>
+    </ul>
+    <button onclick="AddData()">Add</button>
+      <script>
+          let n=2;
+       function AddData(){
+          let li=document.createElement("li");
+          li.textContent="Item"+n;
+          n++;
+          document.querySelector("ul").appendChild(li);
+        }
+
+        let parent=document.querySelector("ul");
+
+        // parent.addEventListener("click",()=>{
+        //       let li=document.getElementsByTagName("li");
+        //       console.log(li);
+
+        //       Array.from(li).forEach((el)=>{
+        //           el.style.color="red"
+        //       })
+        // })
+
+        parent.addEventListener("click",(event)=>{
+                // console.log(event.target)
+                // console.log(event.currentTarget)
+                // console.log(event.target.tagName)
+
+                if((event.target) && (event.target.tagName=="LI")){
+                    event.target.style.color="red";
+                    event.target.remove()
+                }
+        })
+
+
+
+      </script>
+</body>
+</html>
