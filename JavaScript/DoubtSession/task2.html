@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .apply{
+            color: red;
+        }
+        #demo{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+     <p>Lorem ipsum dolor sit amet.</p>
+     <button onclick="Work()">change color</button>
+
+     <script>
+         function Work(){
+            // document.querySelector("p").style.color="red";
+            // document.querySelector("p").style.setProperty("color","red");
+            // document.querySelector("p").classList.add("apply")
+            // document.querySelector("p").setAttribute("class","apply")
+            // document.querySelector("p").id="demo";
+    }
+            let Produts=[
+                {
+                    id:1,
+                    pname:"Vivo",
+                    pprice:2000
+                },
+                {
+                    id:2,
+                    pname:"Vivo-1",
+                    pprice:3000
+                },
+                {
+                    id:3,
+                    pname:"Vivo-3",
+                    pprice:1000
+                },
+                {
+                    id:1,
+                    pname:"Vivo-4",
+                    pprice:5000
+                }
+            ]
+
+     
+
+         //filter mobile those having price <=2000
+
+         let filterMob=Produts.filter((p)=>{
+             return(p.pprice<=2000)
+          })
+
+          console.log(filterMob);
+
+         let bill= filterMob.reduce((sum,a)=>{
+            return sum+a.pprice
+          },0)
+
+          console.log(bill);
+
+
+        //   let arr=["A","B","C","D"];
+        //   let[a,b,c,d]=arr;
+        //   console.log(a);
+
+
+        //   document.addEventListener("keydown",(event)=>{
+        //       if(event.ctrlKey && event.key=="r"){
+        //         event.preventDefault();
+        //         alert("saved Disabled")
+        //       }
+        //   })
+
+             let arr=[1,2,3,4,5,5,7,7,534,665,4];
+            //  find maximum and minimum number from array by using Math.max()  Math.min();
+
+            console.log(Math.max(...arr));
+            console.log(Math.min(...arr));
+
+            let str="Aman";
+            // let strarr=Array.from(str);
+            // console.log(strarr)
+            // console.log(str.split(""));
+     </script>
+</body>
+</html>
